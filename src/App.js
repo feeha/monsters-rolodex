@@ -37,7 +37,7 @@ class App extends React.Component {
                 <h1> Monsters Rolodex </h1>
                 <SearchBox 
                 placeholder='search monsters'
-                handleChange={event => this.handleSearchBox(event)}
+                handleChange={this.handleSearchBox}
                 />
 
                 <CardList monsters={filteredMonsters} />
